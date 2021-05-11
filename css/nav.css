@@ -1,6 +1,52 @@
-.header {
-  font: var(--sub-text);
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
   background-color: var(--bg-light-green);
 
+  padding: 0px 10%;
   height: 150px;
+}
+
+header > li, a, button {
+  font: var(--sub-text);
+  text-decoration: none;
+  color: white;
+}
+
+header > * {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0; 
+}
+
+.logo {
+  cursor: pointer;
+}
+
+.nav__links {
+  list-style: none;
+}
+
+.nav__links li {
+  display: inline-block;
+  padding: 0px 20px;;
+}
+
+.nav__links li a:hover {
+  border-bottom: 3px solid white;
+}
+
+button {
+  padding: 9px 25px;
+  background-color: rgba(0,136,169,1);
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+}
+
+button:hover {
+  background-color: rgba(0,136,169,0.8);
 }
