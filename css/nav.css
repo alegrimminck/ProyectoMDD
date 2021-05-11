@@ -1,0 +1,22 @@
+.nav_home {
+  font: var(--sub-text);
+  background-color: var(--bg-light-green);
+
+  display: flex;
+  align-items: center;
+  
+  height: 150px;
+}
+
+.logo {
+  flex-grow: 1;
+}
+
+.nav_buttons {
+  flex-grow: 6;
+}
+
+.nav_button {
+  text-decoration: none;
+  color: black;
+}
