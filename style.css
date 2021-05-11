@@ -1,0 +1,21 @@
+@import "css/nav.css";
+@import "css/footer.css";
+
+:root {
+  --font-base: 'Roboto', sans-serif;
+  --sub-text: normal 15px/15px var(--font-base);
+  --title: normal 35px/21px var(--font-base);
+  
+  --text-white: #ffff;
+  --bg-light-green: #c6f6cc;
+  --bg-black: black;
+}
+html, body {
+  height: 100%;
+  color: var(--text-white);
+}
+
+body {
+  margin: 0px;
+  /* background-color: #aaa; */
+}
