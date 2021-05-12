@@ -1,10 +1,111 @@
 footer{
   font: var(--sub-text);
   background-color: var(--bg-black);
-  display: flex;
-  justify-content: space-between;
-  padding-left: 120px;
-  padding-right: 214px;
+  color: var(--text-white);
   padding-top: 140px;
-  padding-bottom: 20px;
+}
+hr{
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border: 1px solid;
+}
+
+.info{
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+}
+
+.info-horario{
+  display: flex;
+  align-items: flex-start;
+  
+}
+.icono-reloj{
+  display: flex;
+  justify-content: center;
+}
+
+.icono-reloj img{
+  width: 30%;
+}
+
+
+
+.info-contacto{
+  display: flex;
+  width: 50%;
+  align-items: flex-start;
+}
+.icono-correo{
+  display: flex;
+  justify-content: center;
+  width: 25%;
+} 
+
+.icono-correo img{
+  width: 25%;
+} 
+
+
+.sociales{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.sociales-copy{
+  padding: 20px 45px;
+}
+
+.sociales-iconos{
+  display: flex;
+  padding: 20px 45px;
+  color: var(--text-white);
+  font-size: 25px;
+}
+
+@media screen and (max-width: 768px){
+  footer{
+    padding-top: 80px;
+    text-align: center;
+  }
+  .info{
+    display: block;
+  }
+  .info-horario{
+    display: block;
+  }
+  .icono-reloj{
+    display: flex;
+    justify-content: center;
+  }
+  
+  .icono-reloj img{
+    width: 18%;
+  }
+
+  .info-contacto{
+    width: 100%;
+    display: block;
+    text-align:center;
+    margin-top: 10%;
+  }
+  .icono-correo{
+    display: block;
+    width: 100%;
+  } 
+  
+  .icono-correo img{
+    width: 14%;
+    margin-bottom: 2%;
+  } 
+  
+  .sociales{
+    display: block;
+  }
+  
+  .sociales-iconos{
+    display: block;
+  }
+
 }

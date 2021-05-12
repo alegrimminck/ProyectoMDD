@@ -3,7 +3,7 @@
 
 :root {
   --font-base: 'Roboto', sans-serif;
-  --sub-text: normal 15px/15px var(--font-base);
+  --sub-text: normal 15px/21px var(--font-base);
   --title: normal 35px/21px var(--font-base);
   
   --text-white: #ffff;
@@ -18,4 +18,13 @@ html, body {
 body {
   margin: 0px;
   /* background-color: #aaa; */
+}
+
+p{
+  margin: 0 0 10px;
+}
+
+a{
+  text-decoration: none;
+  color: var(--text-white);
 }
