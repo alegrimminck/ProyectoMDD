@@ -3,7 +3,7 @@ header {
   justify-content: space-between;
   align-items: center;
 
-  background-color: var(--bg-light-green);
+  background-color: black;
 
   padding: 0px 10%;
   height: 150px;
@@ -40,7 +40,7 @@ header > * {
 
 button {
   padding: 9px 25px;
-  background-color: rgba(0,136,169,1);
+  background-color: #2DA945;
   border: none;
   border-radius: 50px;
   cursor: pointer;
@@ -48,5 +48,6 @@ button {
 }
 
 button:hover {
-  background-color: rgba(0,136,169,0.8);
+  background-color: white;
+  color: black;
 }
