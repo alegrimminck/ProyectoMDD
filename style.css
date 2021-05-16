@@ -1,5 +1,6 @@
 @import "css/nav.css";
 @import "css/footer.css";
+@import "css/content.css";
 
 :root {
   --font-base: 'Roboto', sans-serif;
@@ -27,4 +28,12 @@ p{
 a{
   text-decoration: none;
   color: var(--text-white);
+}
+
+.structure {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
