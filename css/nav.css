@@ -3,10 +3,15 @@ header {
   justify-content: space-between;
   align-items: center;
 
-  background-color: black;
+  background-color: rgba(0,0,0,0.2);
+  transition: background-color 0.15s;
 
   padding: 0px 10%;
-  height: 150px;
+  min-height: 150px;
+}
+
+header:hover {
+  background-color: rgba(0,0,0,9.5);
 }
 
 header > li, a, button {
