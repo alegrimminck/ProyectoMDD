@@ -19,7 +19,7 @@ html, body {
 
 body {
   margin: 0px;
-  background-image: url("/imgs/background.jpg");
+  background-image: url("./imgs/background.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 }
