@@ -5,7 +5,7 @@
   --sub-text: normal 22px/26px var(--font-base);
   --text-gray: #CECECE;
   --bg-dark-green: #033504;
-  --bg-gray-opacity: rgba(111, 120, 129, 0.281);
+  --bg-gray-opacity: rgba(117, 119, 121, 0.637);
 }
 
 html, body {
@@ -16,29 +16,24 @@ html, body {
 body {
   margin: 0;
   width: 100%;
-  background: var(--bg-dark-green);
+
+  background-image: url("/ProyectoMDD/imgs/background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 p{
-  margin: 0 0 10px;
+  margin: 0 0 0;
 }
 
 a{
   text-decoration: none;
 }
 
-
-.container-img{
-  overflow: hidden;
-  display: none;
-}
-.container-img img{
-  width: 100%;
-}
-
 form p{
   font: var(--sub-text);
-  font-size: 3.5vw;
+  font-size: 15px;
+
 }
 
 .container-form{
@@ -51,31 +46,34 @@ form p{
   display: flex;
   flex-direction: column;
   align-items: center;
-
   background: var(--bg-gray-opacity);
   padding: 20px;
-
 }
-
+.title{
+  margin-bottom: 25px;
+}
 .title h1{
   font: var(--title);
-  font-size:10vw;
+  font-size: 45px;
+
 }
 .title h1 span{
   font-weight:bold;
 }
 
 input{
-  width: 82vw;
-  height: 40px;
+
   box-sizing: border-box;
   
   border-radius: 4px;
   border: 1px solid var(--text-gray);
-  font-size: 18px;
-  margin-top: 2px;
-  margin-bottom: 21px;
+  margin-bottom: 25px;
   padding: 12px 20px;
+
+  width: 410px;
+  height: 50px;
+  margin-top: 17px;
+  font-size: 22px;
 }
 
 button {
@@ -87,48 +85,4 @@ button {
   transition: all 0.3s ease 0s;
   margin-top: 20px;
   margin-bottom: 20px;
-}
-
-@media screen and (min-width: 768px){
-
-  form p{
-    font-size: 2.1vw;
-
-  }
-  .title h1{
-    font-size: 7vw;
-
-  }
-
-  input{
-    width: 55vw; 
-    height: 45px;
-    font-size: 18px;
-    margin-top: 7px;
-}
-
-@media screen and (min-width: 1215px){
-
-  body{
-    display: flex;
-  }
-  body > div{
-    width: 50%;
-  }
-  
-  .container-img{
-    display: block;
-  }
-  form p{
-    font-size: 1.2vw;
-  }
-  .title h1{
-    font-size:3.5vw;
-  }
-  input{
-    width: 30vw;
-    height: 50px;
-    margin-top: 17px;
-    font-size: 22px;
-  }
 }
