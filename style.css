@@ -7,7 +7,7 @@
   --sub-text: normal 15px/21px var(--font-base);
   --title: bold 35px/21px var(--font-base);
   
-  --text-white: #ffff;
+  --text-white: white;
   --bg-light-green: #c6f6cc;
   --bg-black: black;
 }
