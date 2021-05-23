@@ -6,7 +6,7 @@
   --sub-text: normal 15px/21px var(--font-base);
   --title: normal 35px/21px var(--font-base);
   
-  --text-white: #ffff;
+  --text-white: white;
   --bg-light-green: #c6f6cc;
   --bg-black: black;
 }
@@ -16,7 +16,7 @@ html, body {
 }
 
 body {
-  margin: 0px;
+  margin: 0;
   /* background-color: #aaa; */
 }
 
@@ -28,3 +28,5 @@ a{
   text-decoration: none;
   color: var(--text-white);
 }
+
+
