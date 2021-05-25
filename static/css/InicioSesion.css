@@ -17,7 +17,7 @@ body {
   margin: 0;
   width: 100%;
 
-  background-image: url("/ProyectoMDD/imgs/background.jpg");
+  background-image: url("../imgs/background.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 }
