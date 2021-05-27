@@ -8,3 +8,6 @@ def main(request):
 
 def login(request):
   return render(request, 'login.html')
+
+def member_main(request):
+  return render(request, 'card.html')

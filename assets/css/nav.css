@@ -1,0 +1,58 @@
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  background-color: rgba(0,0,0,0.2);
+  transition: background-color 0.15s;
+
+  padding: 0px 10%;
+  min-height: 150px;
+}
+
+header:hover {
+  background-color: rgba(0,0,0,9.5);
+}
+
+header > li, a, button {
+  font: var(--sub-text);
+  text-decoration: none;
+  color: white;
+}
+
+header > * {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0; 
+}
+
+.logo {
+  cursor: pointer;
+}
+
+.nav__links {
+  list-style: none;
+}
+
+.nav__links li {
+  display: inline-block;
+  padding: 0px 20px;;
+}
+
+.nav__links li a:hover {
+  border-bottom: 3px solid white;
+}
+
+button {
+  padding: 9px 25px;
+  background-color: #2DA945;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+}
+
+button:hover {
+  background-color: white;
+  color: black;
+}
