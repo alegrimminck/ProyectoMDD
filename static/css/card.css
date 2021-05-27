@@ -10,8 +10,6 @@
   --text-gray:rgba(0, 0, 0, 0.6);
   --bg-light-green: #c6f6cc;
   --bg-black: black;
-
-  ;
 }
 
 
@@ -52,7 +50,6 @@ p{
   width: 262px;
   height: 250px;
 
-  /* border-radius: ; */
 }
 
 .info h1{
@@ -64,23 +61,21 @@ p{
 
 
 .info-contents{
-  /* display: inline-flex; */
   margin-bottom: 23px;
   display: flex;
 
 }
 
-.info-contents span{
+.info-contents__title{
   font: var(--sub-text-bold);
+  width: 30%;
 }
 
-.info-contents p{
+.info-contents__content{
   font: var(--sub-text);
   color: var(--text-gray);
 
-  
-  width: 380px;
-  margin:auto;
+  width: 70%;
   
 }
 
