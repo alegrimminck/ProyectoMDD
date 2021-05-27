@@ -9,19 +9,17 @@
   <link rel="stylesheet" href="../static/css/InicioSesion.css">
 </head>
 <body>
-  
+  {% load crispy_forms_tags %}
   <div class="container-form">
     <div class="background">
       <div class="title">
         <h1>Fundación<span>Colunga</span></h1>
       </div>
-      <form>
-        <p>Ingresa tu correo</p>
-        <input type="email" placeholder="example@gmail.com"/>
-        <p>Ingresa tu contraseña</p>
-        <input type="password" placeholder="***************"/>
+      <form method="post">
+        {% csrf_token %} 
+        {{form|crispy}}
+        <button type="submit" >Iniciar sesión</button> 
       </form>
-      <a href="#"><button>Iniciar sesión</button></a>
     </div>
       
   </div>
