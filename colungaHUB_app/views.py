@@ -13,6 +13,6 @@ def login(request):
 def member_main(request):
   return render(request, 'card.html')
 
-def logout(request):
+def logout_path(request):
   logout(request)
-  return redirect("homepage")
+  return redirect('/')
