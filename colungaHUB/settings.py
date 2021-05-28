@@ -131,3 +131,5 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'assets')
 LOGIN_REDIRECT_URL="/member-main"
 LOGOUT_REDIRECT_URL="/"
 
+MEDIA_URL = '/media/'
+MEDIA_ROOT = 'media'

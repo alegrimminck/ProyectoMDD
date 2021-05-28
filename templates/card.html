@@ -36,29 +36,32 @@
 
     <section class="section-members">
       <h2 class="section-members__title">Organizaciones ColungaHUB</h2>
+      {% for organizacion in organizaciones %}
       <div class="card">
-        <img src="../static/imgs/card/Component.png" alt="LogoMiembro">
+        <!-- <img src="../static/imgs/card/Component.png" alt="LogoMiembro"> -->
+        <img src="{{organizacion.image.url}}" alt="LogoMiembro">
         <div class="info-card">
-          <h1 class="info-card__title">Nombre Organización</h1>
+          <h1 class="info-card__title">{{organizacion.name}}</h1>
           <div class="info-contents">
             <p class="info-contents__title">¿Qué hacemos? </p>
-            <p class="info-contents__content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis dapibus orci libero, eget laoreet tellus lacinia eu. </p>
+            <p class="info-contents__content">{{organizacion.description}}</p>
           </div>
           <div class="info-contents">
             <p class="info-contents__title">Fono: </p> 
-            <p class="info-contents__content">+569 9999 9999</p>
+            <p class="info-contents__content">{{organizacion.fono}}</p>
           </div>
           <div class="info-contents">
             <p class="info-contents__title">Contacto:</p>
             <div class="icon">
-              <i class="fab fa-telegram"></i>
-              <i class="far fa-envelope"></i>
-              <i class="fab fa-facebook"></i>
-              <i class="fas fa-globe"></i>
+              <!-- <a href="{{organizacion.telegram_url}}" class="icon-social fab fa-telegram"></a> -->
+              <a href="mailto: {{organizacion.email}}" class="icon-social far fa-envelope"></a>
+              <a href="{{organizacion.facebook_url}}" target=”_blank” class="icon-social fab fa-facebook"></a>
+              <a href="{{organizacion.webpage_url}}" target=”_blank” class="icon-social fas fa-globe"></a>
             </div>
           </div>
         </div>
       </div>
+      {% endfor%}
     </section>
     
     <footer>

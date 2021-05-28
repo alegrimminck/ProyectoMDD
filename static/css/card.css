@@ -16,7 +16,7 @@
 
 html, body {
   height: 100%;
-  color: var(--text-white); 
+  /* color: var(--text-white);  */
 }
 
 body {
@@ -30,11 +30,6 @@ p{
   margin: 0 0 10px;
 }
 
-a{
-  text-decoration: none;
-  color: var(--text-white);
-}
-
 .structure {
   overflow-y: scroll;
   width: 100%;
@@ -44,13 +39,9 @@ a{
   justify-content: space-between;
 }
 
-p{
-  margin:0;
-}
-
 .card{
   width: 900px;
-  background: white;
+  background: #9e8f8f1a;
   box-shadow: 6px 9px 2px -4px rgba(0, 0, 0, 0.35);
   border-radius: 20px;
 
@@ -107,6 +98,9 @@ p{
 
 .icon{
   font-size: 50px;
+}
+.icon-social{
+  color: black;  
 }
 
 .section-members {
