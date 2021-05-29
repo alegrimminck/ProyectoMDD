@@ -17,8 +17,7 @@
       <img class="logo" width="73px" height="81" src="../static/imgs/logo_colunga.png" alt="logo">
       <nav>
         <ul class="nav__links">
-          <li><a href="#">Eventos</a></li>
-          <li><a href="#">Colaboradores</a></li>
+          <li><a href="#organizaciones">Organizaciones</a></li>
         </ul>
       </nav>
       <a href="/logout"><button>Cerrar sesión</button></a>
@@ -34,12 +33,15 @@
       </div>
     </section>
 
-    <section class="section-members">
+    <section id="organizaciones" class="section-members">
       <h2 class="section-members__title">Organizaciones ColungaHUB</h2>
       {% for organizacion in organizaciones %}
       <div class="card">
         <!-- <img src="../static/imgs/card/Component.png" alt="LogoMiembro"> -->
-        <img src="{{organizacion.image.url}}" alt="LogoMiembro">
+        <div class="card__image">
+          <img src="{{organizacion.image.url}}" alt="LogoMiembro">
+        </div>
+
         <div class="info-card">
           <h1 class="info-card__title">{{organizacion.name}}</h1>
           <div class="info-contents">
