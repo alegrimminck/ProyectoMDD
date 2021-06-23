@@ -45,6 +45,9 @@
 </details>
 
 
+<div style="text-align:center">
+  <img src="./image/team-scrum.png" />
+</div>
 
 
 ### Built With
