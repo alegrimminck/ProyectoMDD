@@ -10,6 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@100&family=Poppins:wght@700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../static/css/card.css">
+  
 </head>
 <body>
   <div class="structure">
@@ -26,11 +27,12 @@
     <section class="content">
       <div class=content-box>
         <div class="titulo">
-          <h1>¿Qué está pasando en ColungaHUB?</h1>
+          <h1 class="titulo-principal">¿Qué está pasando en ColungaHUB?</h1>
           <p>Entérate de nuestro próximos eventos revisando nuestro calendario.</p>
         </div>
-        <iframe src="https://calendar.google.com/calendar/embed?height=600&amp;wkst=1&amp;bgcolor=%23ffffff&amp;ctz=America%2FSantiago&amp;src=MmJpdGFvOThsNjA5NW10MzhkOTN0YTc0aG9AZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&amp;color=%230B8043" style="border:solid 1px #777" width="800" height="600" frameborder="0" scrolling="no"></iframe>
-        <!-- <iframe src="https://calendar.google.com/calendar/embed?src=alegrimminck%40gmail.com&ctz=America%2FSantiago" style="border: 0" width="800" height="600" frameborder="0" scrolling="no"></iframe> -->
+
+        <iframe class="content-box_calendar" src="https://calendar.google.com/calendar/embed?src=alegrimminck%40gmail.com&ctz=America%2FSantiago" style="border: 0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+
       </div>
     </section>
 
@@ -49,7 +51,8 @@
       {% for organizacion in organizaciones %}
       <div class="card">
         <div class="card__image">
-          <img src="{{organizacion.image.url}}" alt="LogoMiembro">
+          <img src="../static/imgs/card/Component.png" alt="LogoMiembro">
+          <!-- <img src="{{organizacion.image.url}}" alt="LogoMiembro"> -->
         </div>
 
         <div class="info-card">
