@@ -134,7 +134,6 @@ p{
   top: 45px;
   bottom: 64px;
   font-family: Poppins;
-  /* font-size: 38px; */
   font-size: 2em;
 
 }
@@ -181,3 +180,51 @@ p{
 
   }
 }
+
+.section-redes {
+  background: #F8F7F3;
+  display: grid;
+  justify-items: center;
+  width: 100%;
+}
+
+.section-redes__title {
+  color: black;
+  top: 45px;
+  bottom: 64px;
+  font-family: Poppins;
+  font-size: 38px;
+}
+
+.section-redes__discord__btn {
+  
+  
+  position: relative;
+  padding: 9px 25px;
+  background-color: #5662F6;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: all 0.2s ease 0s;
+
+  
+}
+
+.section-redes__discord__btn span {  
+  display: inline-block;
+  width: 200px;
+  vertical-align: middle;
+}
+
+.section-redes__discord__btn img {  
+	display: inline-block;
+  vertical-align: middle;
+  
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.section-redes__discord__btn:hover {
+  transform: scale(1.15);
+}
+

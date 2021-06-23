@@ -21,7 +21,7 @@
           <li><a href="#organizaciones">Organizaciones</a></li>
         </ul>
       </nav>
-      <a href="/logout"><button>Cerrar sesión</button></a>
+      <a href="/logout"><button class="btn-nav">Cerrar sesión</button></a>
     </header>
   
     <section class="content">
@@ -30,8 +30,20 @@
           <h1 class="titulo-principal">¿Qué está pasando en ColungaHUB?</h1>
           <p>Entérate de nuestro próximos eventos revisando nuestro calendario.</p>
         </div>
+
         <iframe class="content-box_calendar" src="https://calendar.google.com/calendar/embed?src=alegrimminck%40gmail.com&ctz=America%2FSantiago" style="border: 0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+
       </div>
+    </section>
+
+    <section class="section-redes" >
+      <h2 class="section-redes__title">¡Únete a nuestra red!</h2>
+      <form action="https://discord.gg/txmWyZ6P5U" target="_blank">
+        <button type="submit" value="Link discord" class="section-redes__discord__btn">
+          <img src="../static/imgs/Logo_discord.png" alt="Logo discord">
+          <span>¡Ingresa a nuestro Discord!</span>  
+        </button>
+      </form>
     </section>
 
     <section id="organizaciones" class="section-members">
@@ -56,10 +68,29 @@
           <div class="info-contents">
             <p class="info-contents__title">Contacto:</p>
             <div class="icon">
-              <!-- <a href="{{organizacion.telegram_url}}" class="icon-social fab fa-telegram"></a> -->
+              {% if organizacion.telegram_url != None %}
+              <a href="{{organizacion.telegram_url}}" class="icon-social fab fa-telegram"></a>
+              {% endif %}
               <a href="mailto: {{organizacion.email}}" class="icon-social far fa-envelope"></a>
+              {% if organizacion.facebook_url != None %}
               <a href="{{organizacion.facebook_url}}" target=”_blank” class="icon-social fab fa-facebook"></a>
+              {% endif %}
+              {% if organizacion.webpage_url != None %}
               <a href="{{organizacion.webpage_url}}" target=”_blank” class="icon-social fas fa-globe"></a>
+              {% endif %}
+              {% if organizacion.instagram_url != None %}
+              <a href="{{organizacion.webpage_url}}" target=”_blank” class="icon-social fab fa-instagram"></a>
+              {% endif %}
+              {% if organizacion.linkedin_url != None %}
+              <a href="{{organizacion.webpage_url}}" target=”_blank” class="icon-social fab fa-linkedin"></a>
+              {% endif %}
+              {% if organizacion.twitter_url != None %}
+              <a href="{{organizacion.webpage_url}}" target=”_blank” class="icon-social fa fa-twitter"></a>
+              {% endif %}
+              {% if organizacion.flickr_url != None %}
+              <a href="{{organizacion.webpage_url}}" target=”_blank” class="icon-social fa fa-flickr"></a>
+              {% endif %}
+
             </div>
           </div>
         </div>
@@ -86,7 +117,7 @@
           <div>
             <p>Dirección Av. Bustamante 26</p>
             <p>providencia, Santiago</p>
-            <p>Telélefono:&nbsp;+56 222043350 / <br> +56 222748547</p>
+            <p>Teléfono:&nbsp;+56 222043350 / <br> +56 222748547</p>
             <p>Contacto:&nbsp;<a href="mailto:contacto@fundacioncolunga.org">contacto@fundacioncolunga.org</a></p>
           </div>
         </div>
