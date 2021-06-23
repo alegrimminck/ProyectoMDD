@@ -40,25 +40,16 @@ p{
 }
 
 .card{
-  width: 380px;
+  width: 900px;
   background: #9e8f8f1a;
   box-shadow: 6px 9px 2px -4px rgba(0, 0, 0, 0.35);
   border-radius: 20px;
 
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  
-  
   box-sizing: border-box;
-  padding: 15px 0;
+  padding: 15px 32px 15px 8px;
 
   margin-bottom: 30px;
-
-  transition-property: all;
-  transition-duration: 2s;
-  transition-timing-function: ease;
-  
 
 }
 .card:last-child {
@@ -70,8 +61,7 @@ p{
   align-items: center;
   justify-content: center;
 
-  width: 200px;
-  margin: 10px 0 20px 0;
+  width: 350px;
 }
 
 .card__image > img {
@@ -82,27 +72,21 @@ p{
 .info-card{
   color: black;
   display: flex;
-  /* justify-content: center; */
-  /* align-items: center; */
-
   flex-direction: column;
   align-items: stretch;
-  width: 90%;
-
-  
+  width: 100%;
 }
 .info-card__title{
   font: var(--title);
   text-align: center;
-  margin-top: 15px;
-  margin-bottom: 40px;
+  margin-top: 8px;
+  margin-bottom: 18px;
 }
 
 .info-contents{
   margin-bottom: 23px;
   display: flex;
   color: black;
-  
 }
 
 .info-contents__title{
@@ -118,7 +102,7 @@ p{
 
 .icon-social{
   color: black;  
-  font-size: 40px;
+  font-size: 30px;
   padding-right: 10px;
 }
 
@@ -134,51 +118,7 @@ p{
   top: 45px;
   bottom: 64px;
   font-family: Poppins;
-  font-size: 2em;
-
-}
-
-@media screen and (min-width: 710px) {
-  .card{
-    
-    width: 700px;
-  }
-  .card__image {
-    width: 250px;
-  }
-  .info-card{
-    width: 80%;
-  }
-  .icon-social{
-    font-size: 40px;
-  }
-  .info-card__title{
-    margin-top: 15px;
-    margin-bottom: 40px;
-
-  }
-}
-
-@media screen and (min-width: 920px) {
-  .card{
-    flex-direction: row;
-    width: 900px;
-    padding: 15px 32px 15px 8px;
-  }
-  .card__image {
-    width: 350px;
-  }
-  .info-card{
-    width: 100%;
-  }
-  .icon-social{
-    font-size: 30px;
-  }
-  .info-card__title{
-    margin-bottom: 18px;
-    margin-top: 8px;
-
-  }
+  font-size: 38px;
 }
 
 .section-redes {
@@ -227,4 +167,3 @@ p{
 .section-redes__discord__btn:hover {
   transform: scale(1.15);
 }
-
