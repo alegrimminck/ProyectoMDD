@@ -6,7 +6,7 @@
 :root {
   --font-base: 'Roboto', sans-serif;
   --sub-text: normal 15px/21px var(--font-base);
-  --title: bold 35px/normal var(--font-base);
+  --title: bold 35px/21px var(--font-base);
   --sub-text-bold: 500 18px/21px var(--font-base);
   --text-white: white;
   --bg-light-green: #c6f6cc;
