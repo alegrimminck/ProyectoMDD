@@ -68,7 +68,7 @@ Esta es una lista de lo que necesitas para correr el proyecto.
 
 1. Clonar el repositorio
    ```sh
-   git clone https://github.com/panchocorderos/conecta2-project.git
+   git clone https://github.com/alegrimminck/ProyectoMDD.git
 	 ```
 2. Instalar las librerias en un entorno virtual
    ```sh
